@@ -1,0 +1,7 @@
+protocolVersion: 751
+ignorePlayer:
+  - felix911
+message:
+  welcome: '&6Bienvenue &2{Player}&6 sur le serveur &5&lHypercraft&6 ! Nous t''invitons à faire la commande /rt afin de commencer ton aventure.'
+  join: '&e[&2+&e] &6{Player}'
+  leave: '&e[&c-&e] &6{Player}'

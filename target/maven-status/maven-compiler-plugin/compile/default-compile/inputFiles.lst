@@ -1,0 +1,12 @@
+D:\Mes plugins MC\HypercraftJoinMessage\src\main\java\fr\florianpal\hypercraftjoinmessage\HypercraftJoinMessage.java
+D:\Mes plugins MC\HypercraftJoinMessage\src\main\java\fr\florianpal\hypercraftjoinmessage\managers\DatabaseManager.java
+D:\Mes plugins MC\HypercraftJoinMessage\src\main\java\fr\florianpal\hypercraftjoinmessage\configurations\DatabaseConfig.java
+D:\Mes plugins MC\HypercraftJoinMessage\src\main\java\fr\florianpal\hypercraftjoinmessage\IDatabaseTable.java
+D:\Mes plugins MC\HypercraftJoinMessage\src\main\java\fr\florianpal\hypercraftjoinmessage\listeners\LeaveListener.java
+D:\Mes plugins MC\HypercraftJoinMessage\src\main\java\fr\florianpal\hypercraftjoinmessage\configurations\MessageConfig.java
+D:\Mes plugins MC\HypercraftJoinMessage\src\main\java\fr\florianpal\hypercraftjoinmessage\listeners\JoinListener.java
+D:\Mes plugins MC\HypercraftJoinMessage\src\main\java\fr\florianpal\hypercraftjoinmessage\managers\ConfigurationManager.java
+D:\Mes plugins MC\HypercraftJoinMessage\src\main\java\fr\florianpal\hypercraftjoinmessage\managers\CommandManager.java
+D:\Mes plugins MC\HypercraftJoinMessage\src\main\java\fr\florianpal\hypercraftjoinmessage\queries\FirstJoinQueries.java
+D:\Mes plugins MC\HypercraftJoinMessage\src\main\java\fr\florianpal\hypercraftjoinmessage\commands\JoinMessage.java
+D:\Mes plugins MC\HypercraftJoinMessage\src\main\java\fr\florianpal\hypercraftjoinmessage\languages\MessageKeys.java
