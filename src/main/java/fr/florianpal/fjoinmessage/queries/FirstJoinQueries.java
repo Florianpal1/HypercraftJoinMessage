@@ -1,8 +1,8 @@
-package fr.florianpal.hypercraftjoinmessage.queries;
+package fr.florianpal.fjoinmessage.queries;
 
-import fr.florianpal.hypercraftjoinmessage.HypercraftJoinMessage;
-import fr.florianpal.hypercraftjoinmessage.IDatabaseTable;
-import fr.florianpal.hypercraftjoinmessage.managers.DatabaseManager;
+import fr.florianpal.fjoinmessage.FJoinMessage;
+import fr.florianpal.fjoinmessage.IDatabaseTable;
+import fr.florianpal.fjoinmessage.managers.DatabaseManager;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -14,9 +14,9 @@ public class FirstJoinQueries implements IDatabaseTable {
     private static final String ADD_PLAYER = "INSERT INTO first_join (playerUuid) VALUES(?)";
     private static final String GET_VOTES = "SELECT * FROM first_join where playerUuid=?";
     private DatabaseManager databaseManager;
-    private HypercraftJoinMessage plugin;
+    private FJoinMessage plugin;
 
-    public FirstJoinQueries(HypercraftJoinMessage plugin) {
+    public FirstJoinQueries(FJoinMessage plugin) {
         this.plugin = plugin;
         this.databaseManager = plugin.getDatabaseManager();
     }

@@ -1,9 +1,6 @@
-package fr.florianpal.hypercraftjoinmessage.configurations;
+package fr.florianpal.fjoinmessage.configurations;
 
 import net.md_5.bungee.config.Configuration;
-
-import java.util.ArrayList;
-import java.util.List;
 
 public class DatabaseConfig {
 

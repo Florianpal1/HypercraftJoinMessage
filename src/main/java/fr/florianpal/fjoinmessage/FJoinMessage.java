@@ -1,19 +1,19 @@
-package fr.florianpal.hypercraftjoinmessage;
+package fr.florianpal.fjoinmessage;
 
-import fr.florianpal.hypercraftjoinmessage.commands.JoinMessage;
-import fr.florianpal.hypercraftjoinmessage.listeners.JoinListener;
-import fr.florianpal.hypercraftjoinmessage.listeners.LeaveListener;
-import fr.florianpal.hypercraftjoinmessage.managers.CommandManager;
-import fr.florianpal.hypercraftjoinmessage.managers.ConfigurationManager;
-import fr.florianpal.hypercraftjoinmessage.managers.DatabaseManager;
-import fr.florianpal.hypercraftjoinmessage.queries.FirstJoinQueries;
+import fr.florianpal.fjoinmessage.commands.JoinMessage;
+import fr.florianpal.fjoinmessage.listeners.JoinListener;
+import fr.florianpal.fjoinmessage.listeners.LeaveListener;
+import fr.florianpal.fjoinmessage.managers.CommandManager;
+import fr.florianpal.fjoinmessage.managers.ConfigurationManager;
+import fr.florianpal.fjoinmessage.managers.DatabaseManager;
+import fr.florianpal.fjoinmessage.queries.FirstJoinQueries;
 import net.md_5.bungee.api.plugin.Plugin;
 
 import java.io.*;
 import java.util.jar.JarFile;
 import java.util.zip.ZipEntry;
 
-public class HypercraftJoinMessage extends Plugin {
+public class FJoinMessage extends Plugin {
     private ConfigurationManager configurationManager;
     private DatabaseManager databaseManager;
     private FirstJoinQueries firstJoinQueries;

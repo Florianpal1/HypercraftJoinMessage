@@ -1,10 +1,10 @@
-package fr.florianpal.hypercraftjoinmessage.managers;
+package fr.florianpal.fjoinmessage.managers;
 
 
 import com.zaxxer.hikari.HikariConfig;
 import com.zaxxer.hikari.HikariDataSource;
-import fr.florianpal.hypercraftjoinmessage.HypercraftJoinMessage;
-import fr.florianpal.hypercraftjoinmessage.IDatabaseTable;;
+import fr.florianpal.fjoinmessage.FJoinMessage;
+import fr.florianpal.fjoinmessage.IDatabaseTable;;
 
 import java.sql.*;
 import java.util.ArrayList;
@@ -12,9 +12,9 @@ import java.util.ArrayList;
 public class DatabaseManager {
     private HikariConfig config = new HikariConfig();
     private HikariDataSource ds;
-    private HypercraftJoinMessage plugin;
+    private FJoinMessage plugin;
     private ArrayList<IDatabaseTable> repositories = new ArrayList<>();
-    public DatabaseManager(HypercraftJoinMessage plugin) {
+    public DatabaseManager(FJoinMessage plugin) {
         this.plugin = plugin;
         //config.setDriverClassName(plugin.getConfigurationManager().getDatabase().getDriver());
         config.setJdbcUrl(  plugin.getConfigurationManager().getDatabase().getUrl() );

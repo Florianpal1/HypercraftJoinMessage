@@ -1,6 +1,6 @@
-package fr.florianpal.hypercraftjoinmessage.listeners;
+package fr.florianpal.fjoinmessage.listeners;
 
-import fr.florianpal.hypercraftjoinmessage.HypercraftJoinMessage;
+import fr.florianpal.fjoinmessage.FJoinMessage;
 import net.md_5.bungee.api.ChatColor;
 import net.md_5.bungee.api.ProxyServer;
 import net.md_5.bungee.api.chat.TextComponent;
@@ -9,8 +9,8 @@ import net.md_5.bungee.api.plugin.Listener;
 import net.md_5.bungee.event.EventHandler;
 
 public class LeaveListener implements Listener {
-    private HypercraftJoinMessage plugin;
-    public LeaveListener(HypercraftJoinMessage plugin) {
+    private FJoinMessage plugin;
+    public LeaveListener(FJoinMessage plugin) {
         this.plugin = plugin;
     }
     @EventHandler

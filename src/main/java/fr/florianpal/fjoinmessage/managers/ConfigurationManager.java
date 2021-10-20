@@ -1,9 +1,9 @@
-package fr.florianpal.hypercraftjoinmessage.managers;
+package fr.florianpal.fjoinmessage.managers;
 
 
-import fr.florianpal.hypercraftjoinmessage.HypercraftJoinMessage;
-import fr.florianpal.hypercraftjoinmessage.configurations.DatabaseConfig;
-import fr.florianpal.hypercraftjoinmessage.configurations.MessageConfig;
+import fr.florianpal.fjoinmessage.FJoinMessage;
+import fr.florianpal.fjoinmessage.configurations.DatabaseConfig;
+import fr.florianpal.fjoinmessage.configurations.MessageConfig;
 import net.md_5.bungee.config.Configuration;
 import net.md_5.bungee.config.ConfigurationProvider;
 import net.md_5.bungee.config.YamlConfiguration;
@@ -12,7 +12,7 @@ import java.io.File;
 import java.io.IOException;
 
 public class ConfigurationManager {
-    private HypercraftJoinMessage core;
+    private FJoinMessage core;
 
     private DatabaseConfig database = new DatabaseConfig();
     private File databaseFile;
@@ -25,7 +25,7 @@ public class ConfigurationManager {
     private File langFile;
     private Configuration langConfig;
 
-    public ConfigurationManager(HypercraftJoinMessage core) {
+    public ConfigurationManager(FJoinMessage core) {
         try {
             this.core = core;
 
