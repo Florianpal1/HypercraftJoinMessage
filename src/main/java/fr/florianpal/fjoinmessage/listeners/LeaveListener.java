@@ -1,6 +1,7 @@
 package fr.florianpal.fjoinmessage.listeners;
 
 import fr.florianpal.fjoinmessage.FJoinMessage;
+import fr.florianpal.fjoinmessage.utils.FormatUtil;
 import net.md_5.bungee.api.ChatColor;
 import net.md_5.bungee.api.ProxyServer;
 import net.md_5.bungee.api.chat.TextComponent;
@@ -18,8 +19,8 @@ public class LeaveListener implements Listener {
         if(event.getPlayer().getPendingConnection().getVersion() == plugin.getConfigurationManager().getMessage().getProtocolVersion()) {
             String leaveMessage = plugin.getConfigurationManager().getMessage().getLeaveMessage();
             leaveMessage = leaveMessage.replace("{Player}", event.getPlayer().getDisplayName());
-            leaveMessage = ChatColor.translateAlternateColorCodes('&', leaveMessage);
-            ProxyServer.getInstance().broadcast(new TextComponent(leaveMessage));
+            leaveMessage = FormatUtil.format(leaveMessage);
+            ProxyServer.getInstance().broadcast(leaveMessage);
         }
     }
 }

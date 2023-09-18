@@ -1,6 +1,7 @@
 package fr.florianpal.fjoinmessage.listeners;
 
 import fr.florianpal.fjoinmessage.FJoinMessage;
+import fr.florianpal.fjoinmessage.utils.FormatUtil;
 import net.md_5.bungee.api.ChatColor;
 import net.md_5.bungee.api.ProxyServer;
 import net.md_5.bungee.api.chat.TextComponent;
@@ -27,13 +28,13 @@ public class JoinListener implements Listener {
 
                             String joinMessage = plugin.getConfigurationManager().getMessage().getJoinMessage();
                             joinMessage = joinMessage.replace("{Player}", event.getPlayer().getDisplayName());
-                            joinMessage = ChatColor.translateAlternateColorCodes('&', joinMessage);
-                            ProxyServer.getInstance().broadcast(new TextComponent(joinMessage));
+                            joinMessage = FormatUtil.format(joinMessage);
+                            ProxyServer.getInstance().broadcast(joinMessage);
                         } else {
                             String firstjoinMessage = plugin.getConfigurationManager().getMessage().getWelcomeMessage();
                             firstjoinMessage = firstjoinMessage.replace("{Player}", event.getPlayer().getDisplayName());
-                            firstjoinMessage = ChatColor.translateAlternateColorCodes('&', firstjoinMessage);
-                            ProxyServer.getInstance().broadcast(new TextComponent(firstjoinMessage));
+                            firstjoinMessage = FormatUtil.format(firstjoinMessage);
+                            ProxyServer.getInstance().broadcast(firstjoinMessage);
                             plugin.getFirstJoinQueries().addPlayer(event.getPlayer().getUniqueId().toString());
                         }
                     }

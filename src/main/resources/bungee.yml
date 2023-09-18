@@ -1,4 +1,4 @@
-name: HypercraftJoinMessage
-main: fr.florianpal.hypercraftjoinmessage.HypercraftJoinMessage
+name: FJoinMessage
+main: fr.florianpal.fjoinmessage.FJoinMessage
 version: 1.0
 author: florianpal

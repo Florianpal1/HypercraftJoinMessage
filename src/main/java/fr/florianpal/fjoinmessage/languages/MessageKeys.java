@@ -10,7 +10,7 @@ public enum MessageKeys implements MessageKeyProvider {
 
     JOINMESSAGE_RELOAD;
 
-    private static final String PREFIX = "hypercraft";
+    private static final String PREFIX = "fmessagejoin";
 
     private final MessageKey key = MessageKey.of(PREFIX + "." + this.name().toLowerCase());
 
